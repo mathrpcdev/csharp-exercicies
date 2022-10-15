@@ -28,7 +28,7 @@ namespace teste
 
             Console.WriteLine(roll);
 
-            /* Não é possível um statelss method(que são os métodos staticos) acessar um MÉTODO DE INSTÂNCIA, como o Next()
+            /* Não é possível um statelss method(que são os métodos staticos) acessar um MÉTODO DE INSTÂNCIA, como o Next().
             MÉTODOS DE INSTÂNCIA PRECISAM CRIAR UM OBJETO PARA QUE O MESMO SEJA ACESSADO POR ELE. Portanto:
             Instanciamos uma classe at'raves do método ' = new classeQualquer*'  */
             //int result = Random.Next();
