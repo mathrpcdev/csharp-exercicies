@@ -1,2 +1,2 @@
-# csharp-exercicies
+# csharp-exercicies-LearningPath
 Microsoft Leaning path.
