@@ -21,7 +21,7 @@ namespace teste
 
             /* PARA  CHAMAR MÉTODOS EM/DE UMA CLASSE USAMOS:
     className.methodName(); --> o símbolo . é o OPERADOR DE ACESSO AO "MEMBRO" (access operator)
-    O  .  acessa o método(method) definido na classe. Ex: Random (é uma classe).               */
+    O . acessa o método(method) definido na classe. Ex: Random (é uma classe).               */
 
             Random dice = new Random();
             int roll = dice.Next(1, 7);
@@ -29,8 +29,8 @@ namespace teste
             Console.WriteLine(roll);
 
             /* Não é possível um statelss method(que são os métodos staticos) acessar um MÉTODO DE INSTÂNCIA, como o Next().
-            MÉTODOS DE INSTÂNCIA PRECISAM CRIAR UM OBJETO PARA QUE O MESMO SEJA ACESSADO POR ELE. Portanto:
-            Instanciamos uma classe at'raves do método ' = new classeQualquer*'  */
+             OS MÉTODOS DE INSTÂNCIA PRECISAM DE UM OBJETO JÁ CRIADO PARA QUE O MESMO(O MÉTODO) SEJA ACESSADO POR ELE(ACESSADA PELO NOVO OBJETO). Portanto:
+            Instanciamos uma classe através do método ' = new nomeDeUmNovoInstanciamentoQualquer'  */
             //int result = Random.Next();
 
             Random secondDice = new Random();
@@ -52,7 +52,7 @@ namespace teste
 
             Random thirdDice = new Random();
 
-            //MOSTRARÁ UM VALOR MÁXIMO E ALEATÓRIO QUE IM INT TYPE COMPORTA
+            //MOSTRARÁ UM VALOR MÁXIMO E ALEATÓRIO QUE UM INT TYPE COMPORTA
             int thirdRoll = thirdDice.Next();
 
             //O OUTPUT SERÁ DE 0 À 100
