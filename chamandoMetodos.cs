@@ -1,44 +1,36 @@
-﻿//---------->> É preciso estudar o problema do Main <<-----------------
-//********************************************************************************************************
-//***********************************EXERCÍCIO******************************
-// ----------------->  stateful (instance) and stateless (static) METHODS <----------------------------------
-//********************************************************************************************************
+//***********************************************************************
+//*************************  EXERCÍCIO  *********************************
+// -------->  stateful (instance) and stateless (static) METHODS <-------
+//***********************************************************************
 
-using System;
 /* PARA  CHAMAR MÉTODOS EM/DE UMA CLASSE USAMOS:
    className.methodName(); --> o símbolo . é o OPERADOR DE ACESSO AO "MEMBRO" (access operator)
-   O  .  acessa o método(method) definido na classe. Ex: Random (é uma classe).        */
-
+   O  .  acessa o método(method) definido na classe. Ex: Random (é uma classe) e Next() é um método que pertence a Random class.      
+*/
+using System;
 
 namespace teste
 {
-
     class Myapp
     {
-
         static void Main(string[] args)
         {
-
-            /* PARA  CHAMAR MÉTODOS EM/DE UMA CLASSE USAMOS:
-    className.methodName(); --> o símbolo . é o OPERADOR DE ACESSO AO "MEMBRO" (access operator)
-    O . acessa o método(method) definido na classe. Ex: Random (é uma classe).               */
-
             Random dice = new Random();
             int roll = dice.Next(1, 7);
-
             Console.WriteLine(roll);
 
-            /* Não é possível um statelss method(que são os métodos staticos) acessar um MÉTODO DE INSTÂNCIA, como o Next().
-             OS MÉTODOS DE INSTÂNCIA PRECISAM DE UM OBJETO JÁ CRIADO PARA QUE O MESMO(O MÉTODO) SEJA ACESSADO POR ELE(ACESSADA PELO NOVO OBJETO). Portanto:
-            Instanciamos uma classe através do método ' = new nomeDeUmNovoInstanciamentoQualquer'  */
-            //int result = Random.Next();
-
             Random secondDice = new Random();
-            /*O método Next() RECEBE 2 PARAMETROS SEPARADOS POR , (VÍRGULAS)
-             A ASSINATURA DO MÉTODO É: O NÚMERO DE PARÂMETROS DE ENTRADA(DENTRO DE PARÊNTESES) E O SEU TYPE   */
             int secondRoll = secondDice.Next(1, 10);
-
             Console.WriteLine(secondRoll);
+           
+            /* OBSERVACÕES: Statelss method(métodos staticos).
+             OS MÉTODOS DE INSTÂNCIA PRECISAM DE UM OBJETO JÁ CRIADO PARA QUE O MESMO(O MÉTODO) SEJA ACESSADO POR ELE(ACESSADA PELO NOVO OBJETO). 
+            
+             OBS2: O método Next() RECEBE 2 PARAMETROS SEPARADOS POR , (VÍRGULAS)
+             A ASSINATURA DO MÉTODO É: O NÚMERO DE PARÂMETROS DE ENTRADA(DENTRO DE PARÊNTESES) E O SEU TIPO.          
+            */
+            
+
             Console.WriteLine("-------------OVERLODED METHODS-----------------\n");
 
             int number = 7;
@@ -48,8 +40,8 @@ namespace teste
             Console.WriteLine();
             Console.WriteLine(text);
             Console.WriteLine();
+           
             Console.WriteLine("----------------------------OS TRÊS MÉTODOS QUE O RANDOM.NEXT() COMPORTA-------------");
-
             Random thirdDice = new Random();
 
             //MOSTRARÁ UM VALOR MÁXIMO E ALEATÓRIO QUE UM INT TYPE COMPORTA
