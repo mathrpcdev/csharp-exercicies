@@ -1,3 +1,4 @@
+// Interpolation exercicies within the if statement.
 class diceGameIterations
 {
     static void Main(string[] args)
