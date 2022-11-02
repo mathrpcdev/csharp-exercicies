@@ -1,4 +1,11 @@
-﻿class subscriptionExpiration
+/*
+    Intancio uma classe Random para gerar números aleatórios.
+    Com base no número aleatório gerado, a regra de negócio irá identificar se o usuário precisa ou não renovar sua assinatura.
+    O usuário será informado quanto tempo lhe resta para sua assinatura expirar, e quantos porcentos de desconto ele irá receber com base no número de dias
+    restantes para o dia de sua expiração.
+*/﻿
+
+class subscriptionExpiration
 {
     static void Main(string[] args)
     {
