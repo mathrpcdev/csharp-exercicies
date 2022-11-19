@@ -9,7 +9,8 @@ da palavra chave 'continue'
 //Exercício 1
 /*
 A regra de negócio que utiliza o 'do-while' statement funciona da seguinte forma:
-A expressão booleana será avaliada após a instrução dentro do bloco de código.
+A expressão booleana será avaliada após a instrução dentro do bloco de código. Se a expressão boleana
+for verdadeira o código irá voltar para o início de seu looping.
  */
 
 Random aleatory = new Random();
